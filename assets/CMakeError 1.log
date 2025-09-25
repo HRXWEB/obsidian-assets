@@ -1,0 +1,319 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/clang-16 
+Build flags: -v;--sysroot=/rootfs
+Id flags:  
+
+The output was:
+1
+Ubuntu clang version 16.0.6 (++20231112100455+7cbf1a259152-1~exp1~20231112100542.106)
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/8
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ "/usr/lib/llvm-16/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerId.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/3.16.3/CompilerIdC -resource-dir /usr/lib/llvm-16/lib/clang/16 -isysroot /rootfs -internal-isystem /usr/lib/llvm-16/lib/clang/16/include -internal-isystem /rootfs/usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include -internal-externc-isystem /rootfs/include -internal-externc-isystem /rootfs/usr/include -fdebug-compilation-dir=/workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/3.16.3/CompilerIdC -ferror-limit 19 -fgnuc-version=4.2.1 -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o /tmp/CMakeCCompilerId-2123df.o -x c CMakeCCompilerId.c
+clang -cc1 version 16.0.6 based upon LLVM 16.0.6 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/rootfs/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/llvm-16/lib/clang/16/include
+ /rootfs/usr/local/include
+ /rootfs/usr/include
+End of search list.
+ "/usr/bin/ld" --sysroot=/rootfs -pie -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o a.out Scrt1.o crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/9 -L/rootfs/lib -L/rootfs/usr/lib /tmp/CMakeCCompilerId-2123df.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-linux-gnu/9/crtendS.o crtn.o
+/usr/bin/ld: cannot find Scrt1.o: No such file or directory
+/usr/bin/ld: cannot find crti.o: No such file or directory
+/usr/bin/ld: cannot find libgcc_s.so.1
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/clang++-16 
+Build flags: -v;--sysroot=/rootfs
+Id flags:  
+
+The output was:
+1
+Ubuntu clang version 16.0.6 (++20231112100455+7cbf1a259152-1~exp1~20231112100542.106)
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/8
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ "/usr/lib/llvm-16/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerId.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/3.16.3/CompilerIdCXX -resource-dir /usr/lib/llvm-16/lib/clang/16 -isysroot /rootfs -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/9/../../../../include/x86_64-linux-gnu/c++/9 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/backward -internal-isystem /usr/lib/llvm-16/lib/clang/16/include -internal-isystem /rootfs/usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include -internal-externc-isystem /rootfs/include -internal-externc-isystem /rootfs/usr/include -fdeprecated-macro -fdebug-compilation-dir=/workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/3.16.3/CompilerIdCXX -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o /tmp/CMakeCXXCompilerId-24b169.o -x c++ CMakeCXXCompilerId.cpp
+clang -cc1 version 16.0.6 based upon LLVM 16.0.6 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/rootfs/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/9/../../../../include/x86_64-linux-gnu/c++/9
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/backward
+ /usr/lib/llvm-16/lib/clang/16/include
+ /rootfs/usr/local/include
+ /rootfs/usr/include
+End of search list.
+ "/usr/bin/ld" --sysroot=/rootfs -pie -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o a.out Scrt1.o crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/9 -L/rootfs/lib -L/rootfs/usr/lib /tmp/CMakeCXXCompilerId-24b169.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/9/crtendS.o crtn.o
+/usr/bin/ld: cannot find Scrt1.o: No such file or directory
+/usr/bin/ld: cannot find crti.o: No such file or directory
+/usr/bin/ld: cannot find -lm
+/usr/bin/ld: cannot find libgcc_s.so.1
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Detecting C OpenMP failed with the following output:
+Change Dir: /workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_501f7/fast && /usr/bin/make -f CMakeFiles/cmTC_501f7.dir/build.make CMakeFiles/cmTC_501f7.dir/build
+make[1]: Entering directory '/workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_501f7.dir/OpenMPTryFlag.c.o
+/usr/bin/clang-16 --target=aarch64-linux-gnu --sysroot=/rootfs   -v --sysroot=/rootfs -fopenmp=libomp -v   -std=gnu99 -o CMakeFiles/cmTC_501f7.dir/OpenMPTryFlag.c.o   -c /workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+Ubuntu clang version 16.0.6 (++20231112100455+7cbf1a259152-1~exp1~20231112100542.106)
+Target: aarch64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/7
+Found candidate GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/7.5.0
+Found candidate GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/8
+Found candidate GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/9
+Selected GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/9
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-16/bin/clang" -cc1 -triple aarch64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-abi aapcs -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -v -fcoverage-compilation-dir=/workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-16/lib/clang/16 -isysroot /rootfs -internal-isystem /usr/lib/llvm-16/lib/clang/16/include -internal-isystem /rootfs/usr/local/include -internal-isystem /rootfs/lib/gcc/aarch64-linux-gnu/9/../../../../aarch64-linux-gnu/include -internal-externc-isystem /rootfs/usr/include/aarch64-linux-gnu -internal-externc-isystem /rootfs/include -internal-externc-isystem /rootfs/usr/include -std=gnu99 -fdebug-compilation-dir=/workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/CMakeTmp -ferror-limit 19 -fopenmp -fno-signed-char -fgnuc-version=4.2.1 -target-feature +outline-atomics -target-feature -fmv -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_501f7.dir/OpenMPTryFlag.c.o -x c /workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+clang -cc1 version 16.0.6 based upon LLVM 16.0.6 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/rootfs/lib/gcc/aarch64-linux-gnu/9/../../../../aarch64-linux-gnu/include"
+ignoring nonexistent directory "/rootfs/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/llvm-16/lib/clang/16/include
+ /rootfs/usr/local/include
+ /rootfs/usr/include/aarch64-linux-gnu
+ /rootfs/usr/include
+End of search list.
+/workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/FindOpenMP/OpenMPTryFlag.c:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_501f7.dir/build.make:66: CMakeFiles/cmTC_501f7.dir/OpenMPTryFlag.c.o] Error 1
+make[1]: Leaving directory '/workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_501f7/fast] Error 2
+
+
+
+Detecting C OpenMP failed with the following output:
+Change Dir: /workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ebc11/fast && /usr/bin/make -f CMakeFiles/cmTC_ebc11.dir/build.make CMakeFiles/cmTC_ebc11.dir/build
+make[1]: Entering directory '/workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ebc11.dir/OpenMPTryFlag.c.o
+/usr/bin/clang-16 --target=aarch64-linux-gnu --sysroot=/rootfs   -v --sysroot=/rootfs -fopenmp=libiomp5 -v   -std=gnu99 -o CMakeFiles/cmTC_ebc11.dir/OpenMPTryFlag.c.o   -c /workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+Ubuntu clang version 16.0.6 (++20231112100455+7cbf1a259152-1~exp1~20231112100542.106)
+Target: aarch64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/7
+Found candidate GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/7.5.0
+Found candidate GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/8
+Found candidate GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/9
+Selected GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/9
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-16/bin/clang" -cc1 -triple aarch64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-abi aapcs -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -v -fcoverage-compilation-dir=/workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-16/lib/clang/16 -isysroot /rootfs -internal-isystem /usr/lib/llvm-16/lib/clang/16/include -internal-isystem /rootfs/usr/local/include -internal-isystem /rootfs/lib/gcc/aarch64-linux-gnu/9/../../../../aarch64-linux-gnu/include -internal-externc-isystem /rootfs/usr/include/aarch64-linux-gnu -internal-externc-isystem /rootfs/include -internal-externc-isystem /rootfs/usr/include -std=gnu99 -fdebug-compilation-dir=/workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/CMakeTmp -ferror-limit 19 -fopenmp -fno-signed-char -fgnuc-version=4.2.1 -target-feature +outline-atomics -target-feature -fmv -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_ebc11.dir/OpenMPTryFlag.c.o -x c /workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+clang -cc1 version 16.0.6 based upon LLVM 16.0.6 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/rootfs/lib/gcc/aarch64-linux-gnu/9/../../../../aarch64-linux-gnu/include"
+ignoring nonexistent directory "/rootfs/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/llvm-16/lib/clang/16/include
+ /rootfs/usr/local/include
+ /rootfs/usr/include/aarch64-linux-gnu
+ /rootfs/usr/include
+End of search list.
+/workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/FindOpenMP/OpenMPTryFlag.c:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_ebc11.dir/build.make:66: CMakeFiles/cmTC_ebc11.dir/OpenMPTryFlag.c.o] Error 1
+make[1]: Leaving directory '/workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_ebc11/fast] Error 2
+
+
+
+Detecting C OpenMP failed with the following output:
+Change Dir: /workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_edc12/fast && /usr/bin/make -f CMakeFiles/cmTC_edc12.dir/build.make CMakeFiles/cmTC_edc12.dir/build
+make[1]: Entering directory '/workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_edc12.dir/OpenMPTryFlag.c.o
+/usr/bin/clang-16 --target=aarch64-linux-gnu --sysroot=/rootfs   -v --sysroot=/rootfs -fopenmp -v   -std=gnu99 -o CMakeFiles/cmTC_edc12.dir/OpenMPTryFlag.c.o   -c /workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+Ubuntu clang version 16.0.6 (++20231112100455+7cbf1a259152-1~exp1~20231112100542.106)
+Target: aarch64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/7
+Found candidate GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/7.5.0
+Found candidate GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/8
+Found candidate GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/9
+Selected GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/9
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-16/bin/clang" -cc1 -triple aarch64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-abi aapcs -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -v -fcoverage-compilation-dir=/workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-16/lib/clang/16 -isysroot /rootfs -internal-isystem /usr/lib/llvm-16/lib/clang/16/include -internal-isystem /rootfs/usr/local/include -internal-isystem /rootfs/lib/gcc/aarch64-linux-gnu/9/../../../../aarch64-linux-gnu/include -internal-externc-isystem /rootfs/usr/include/aarch64-linux-gnu -internal-externc-isystem /rootfs/include -internal-externc-isystem /rootfs/usr/include -std=gnu99 -fdebug-compilation-dir=/workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/CMakeTmp -ferror-limit 19 -fopenmp -fno-signed-char -fgnuc-version=4.2.1 -target-feature +outline-atomics -target-feature -fmv -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_edc12.dir/OpenMPTryFlag.c.o -x c /workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+clang -cc1 version 16.0.6 based upon LLVM 16.0.6 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/rootfs/lib/gcc/aarch64-linux-gnu/9/../../../../aarch64-linux-gnu/include"
+ignoring nonexistent directory "/rootfs/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/llvm-16/lib/clang/16/include
+ /rootfs/usr/local/include
+ /rootfs/usr/include/aarch64-linux-gnu
+ /rootfs/usr/include
+End of search list.
+/workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/FindOpenMP/OpenMPTryFlag.c:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_edc12.dir/build.make:66: CMakeFiles/cmTC_edc12.dir/OpenMPTryFlag.c.o] Error 1
+make[1]: Leaving directory '/workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_edc12/fast] Error 2
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8f60e/fast && /usr/bin/make -f CMakeFiles/cmTC_8f60e.dir/build.make CMakeFiles/cmTC_8f60e.dir/build
+make[1]: Entering directory '/workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8f60e.dir/OpenMPTryFlag.cpp.o
+/usr/bin/clang++-16 --target=aarch64-linux-gnu --sysroot=/rootfs    -v --sysroot=/rootfs -fopenmp=libomp -v   -std=gnu++2a -o CMakeFiles/cmTC_8f60e.dir/OpenMPTryFlag.cpp.o -c /workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Ubuntu clang version 16.0.6 (++20231112100455+7cbf1a259152-1~exp1~20231112100542.106)
+Target: aarch64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/7
+Found candidate GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/7.5.0
+Found candidate GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/8
+Found candidate GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/9
+Selected GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/9
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-16/bin/clang" -cc1 -triple aarch64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-abi aapcs -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -v -fcoverage-compilation-dir=/workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-16/lib/clang/16 -isysroot /rootfs -internal-isystem /rootfs/lib/gcc/aarch64-linux-gnu/9/../../../../include/c++/9 -internal-isystem /rootfs/lib/gcc/aarch64-linux-gnu/9/../../../../include/aarch64-linux-gnu/c++/9 -internal-isystem /rootfs/lib/gcc/aarch64-linux-gnu/9/../../../../include/c++/9/backward -internal-isystem /usr/lib/llvm-16/lib/clang/16/include -internal-isystem /rootfs/usr/local/include -internal-isystem /rootfs/lib/gcc/aarch64-linux-gnu/9/../../../../aarch64-linux-gnu/include -internal-externc-isystem /rootfs/usr/include/aarch64-linux-gnu -internal-externc-isystem /rootfs/include -internal-externc-isystem /rootfs/usr/include -std=gnu++2a -fdeprecated-macro -fdebug-compilation-dir=/workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/CMakeTmp -ferror-limit 19 -fopenmp -fno-signed-char -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -target-feature +outline-atomics -target-feature -fmv -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_8f60e.dir/OpenMPTryFlag.cpp.o -x c++ /workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+clang -cc1 version 16.0.6 based upon LLVM 16.0.6 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/rootfs/lib/gcc/aarch64-linux-gnu/9/../../../../aarch64-linux-gnu/include"
+ignoring nonexistent directory "/rootfs/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /rootfs/lib/gcc/aarch64-linux-gnu/9/../../../../include/c++/9
+ /rootfs/lib/gcc/aarch64-linux-gnu/9/../../../../include/aarch64-linux-gnu/c++/9
+ /rootfs/lib/gcc/aarch64-linux-gnu/9/../../../../include/c++/9/backward
+ /usr/lib/llvm-16/lib/clang/16/include
+ /rootfs/usr/local/include
+ /rootfs/usr/include/aarch64-linux-gnu
+ /rootfs/usr/include
+End of search list.
+/workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_8f60e.dir/build.make:66: CMakeFiles/cmTC_8f60e.dir/OpenMPTryFlag.cpp.o] Error 1
+make[1]: Leaving directory '/workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_8f60e/fast] Error 2
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f16be/fast && /usr/bin/make -f CMakeFiles/cmTC_f16be.dir/build.make CMakeFiles/cmTC_f16be.dir/build
+make[1]: Entering directory '/workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f16be.dir/OpenMPTryFlag.cpp.o
+/usr/bin/clang++-16 --target=aarch64-linux-gnu --sysroot=/rootfs    -v --sysroot=/rootfs -fopenmp=libiomp5 -v   -std=gnu++2a -o CMakeFiles/cmTC_f16be.dir/OpenMPTryFlag.cpp.o -c /workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Ubuntu clang version 16.0.6 (++20231112100455+7cbf1a259152-1~exp1~20231112100542.106)
+Target: aarch64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/7
+Found candidate GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/7.5.0
+Found candidate GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/8
+Found candidate GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/9
+Selected GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/9
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-16/bin/clang" -cc1 -triple aarch64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-abi aapcs -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -v -fcoverage-compilation-dir=/workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-16/lib/clang/16 -isysroot /rootfs -internal-isystem /rootfs/lib/gcc/aarch64-linux-gnu/9/../../../../include/c++/9 -internal-isystem /rootfs/lib/gcc/aarch64-linux-gnu/9/../../../../include/aarch64-linux-gnu/c++/9 -internal-isystem /rootfs/lib/gcc/aarch64-linux-gnu/9/../../../../include/c++/9/backward -internal-isystem /usr/lib/llvm-16/lib/clang/16/include -internal-isystem /rootfs/usr/local/include -internal-isystem /rootfs/lib/gcc/aarch64-linux-gnu/9/../../../../aarch64-linux-gnu/include -internal-externc-isystem /rootfs/usr/include/aarch64-linux-gnu -internal-externc-isystem /rootfs/include -internal-externc-isystem /rootfs/usr/include -std=gnu++2a -fdeprecated-macro -fdebug-compilation-dir=/workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/CMakeTmp -ferror-limit 19 -fopenmp -fno-signed-char -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -target-feature +outline-atomics -target-feature -fmv -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_f16be.dir/OpenMPTryFlag.cpp.o -x c++ /workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+clang -cc1 version 16.0.6 based upon LLVM 16.0.6 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/rootfs/lib/gcc/aarch64-linux-gnu/9/../../../../aarch64-linux-gnu/include"
+ignoring nonexistent directory "/rootfs/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /rootfs/lib/gcc/aarch64-linux-gnu/9/../../../../include/c++/9
+ /rootfs/lib/gcc/aarch64-linux-gnu/9/../../../../include/aarch64-linux-gnu/c++/9
+ /rootfs/lib/gcc/aarch64-linux-gnu/9/../../../../include/c++/9/backward
+ /usr/lib/llvm-16/lib/clang/16/include
+ /rootfs/usr/local/include
+ /rootfs/usr/include/aarch64-linux-gnu
+ /rootfs/usr/include
+End of search list.
+/workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_f16be.dir/build.make:66: CMakeFiles/cmTC_f16be.dir/OpenMPTryFlag.cpp.o] Error 1
+make[1]: Leaving directory '/workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_f16be/fast] Error 2
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8c399/fast && /usr/bin/make -f CMakeFiles/cmTC_8c399.dir/build.make CMakeFiles/cmTC_8c399.dir/build
+make[1]: Entering directory '/workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8c399.dir/OpenMPTryFlag.cpp.o
+/usr/bin/clang++-16 --target=aarch64-linux-gnu --sysroot=/rootfs    -v --sysroot=/rootfs -fopenmp -v   -std=gnu++2a -o CMakeFiles/cmTC_8c399.dir/OpenMPTryFlag.cpp.o -c /workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Ubuntu clang version 16.0.6 (++20231112100455+7cbf1a259152-1~exp1~20231112100542.106)
+Target: aarch64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/7
+Found candidate GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/7.5.0
+Found candidate GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/8
+Found candidate GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/9
+Selected GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/9
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-16/bin/clang" -cc1 -triple aarch64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-abi aapcs -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -v -fcoverage-compilation-dir=/workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-16/lib/clang/16 -isysroot /rootfs -internal-isystem /rootfs/lib/gcc/aarch64-linux-gnu/9/../../../../include/c++/9 -internal-isystem /rootfs/lib/gcc/aarch64-linux-gnu/9/../../../../include/aarch64-linux-gnu/c++/9 -internal-isystem /rootfs/lib/gcc/aarch64-linux-gnu/9/../../../../include/c++/9/backward -internal-isystem /usr/lib/llvm-16/lib/clang/16/include -internal-isystem /rootfs/usr/local/include -internal-isystem /rootfs/lib/gcc/aarch64-linux-gnu/9/../../../../aarch64-linux-gnu/include -internal-externc-isystem /rootfs/usr/include/aarch64-linux-gnu -internal-externc-isystem /rootfs/include -internal-externc-isystem /rootfs/usr/include -std=gnu++2a -fdeprecated-macro -fdebug-compilation-dir=/workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/CMakeTmp -ferror-limit 19 -fopenmp -fno-signed-char -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -target-feature +outline-atomics -target-feature -fmv -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_8c399.dir/OpenMPTryFlag.cpp.o -x c++ /workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+clang -cc1 version 16.0.6 based upon LLVM 16.0.6 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/rootfs/lib/gcc/aarch64-linux-gnu/9/../../../../aarch64-linux-gnu/include"
+ignoring nonexistent directory "/rootfs/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /rootfs/lib/gcc/aarch64-linux-gnu/9/../../../../include/c++/9
+ /rootfs/lib/gcc/aarch64-linux-gnu/9/../../../../include/aarch64-linux-gnu/c++/9
+ /rootfs/lib/gcc/aarch64-linux-gnu/9/../../../../include/c++/9/backward
+ /usr/lib/llvm-16/lib/clang/16/include
+ /rootfs/usr/local/include
+ /rootfs/usr/include/aarch64-linux-gnu
+ /rootfs/usr/include
+End of search list.
+/workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_8c399.dir/build.make:66: CMakeFiles/cmTC_8c399.dir/OpenMPTryFlag.cpp.o] Error 1
+make[1]: Leaving directory '/workspace/nova_dataflow/cmake-build-release-nsd-remote-clang16/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_8c399/fast] Error 2
+
+
+

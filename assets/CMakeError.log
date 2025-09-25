@@ -1,0 +1,197 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/clang 
+Build flags: -v;--sysroot=/rootfs
+Id flags:  
+
+The output was:
+1
+clang version 10.0.0-4ubuntu1 
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/8
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ "/usr/lib/llvm-10/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerId.c -mrelocation-model static -mthread-model posix -mframe-pointer=all -fmath-errno -fno-rounding-math -masm-verbose -mconstructor-aliases -munwind-tables -target-cpu x86-64 -dwarf-column-info -fno-split-dwarf-inlining -debugger-tuning=gdb -v -resource-dir /usr/lib/llvm-10/lib/clang/10.0.0 -isysroot /rootfs -internal-isystem /rootfs/usr/local/include -internal-isystem /usr/lib/llvm-10/lib/clang/10.0.0/include -internal-externc-isystem /rootfs/include -internal-externc-isystem /rootfs/usr/include -fdebug-compilation-dir /workspace/nova_dataflow/cmake-build-release-nsd-remote/CMakeFiles/3.16.3/CompilerIdC -ferror-limit 19 -fmessage-length 0 -fgnuc-version=4.2.1 -fobjc-runtime=gcc -fdiagnostics-show-option -faddrsig -o /tmp/CMakeCCompilerId-383640.o -x c CMakeCCompilerId.c
+clang -cc1 version 10.0.0 based upon LLVM 10.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/rootfs/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /rootfs/usr/local/include
+ /usr/lib/llvm-10/lib/clang/10.0.0/include
+ /rootfs/usr/include
+End of search list.
+ "/usr/bin/ld" --sysroot=/rootfs -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o a.out crt1.o crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/9/crtbegin.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/9 -L/rootfs/lib -L/rootfs/usr/lib /tmp/CMakeCCompilerId-383640.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-linux-gnu/9/crtend.o crtn.o
+/usr/bin/ld: cannot find crt1.o: No such file or directory
+/usr/bin/ld: cannot find crti.o: No such file or directory
+/usr/bin/ld: cannot find libgcc_s.so.1
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/clang++ 
+Build flags: -v;--sysroot=/rootfs
+Id flags:  
+
+The output was:
+1
+clang version 10.0.0-4ubuntu1 
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/8
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ "/usr/lib/llvm-10/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerId.cpp -mrelocation-model static -mthread-model posix -mframe-pointer=all -fmath-errno -fno-rounding-math -masm-verbose -mconstructor-aliases -munwind-tables -target-cpu x86-64 -dwarf-column-info -fno-split-dwarf-inlining -debugger-tuning=gdb -v -resource-dir /usr/lib/llvm-10/lib/clang/10.0.0 -isysroot /rootfs -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/9/../../../../include/x86_64-linux-gnu/c++/9 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/9/../../../../include/x86_64-pc-linux-gnu/c++/9 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/backward -internal-isystem /rootfs/usr/local/include -internal-isystem /usr/lib/llvm-10/lib/clang/10.0.0/include -internal-externc-isystem /rootfs/include -internal-externc-isystem /rootfs/usr/include -fdeprecated-macro -fdebug-compilation-dir /workspace/nova_dataflow/cmake-build-release-nsd-remote/CMakeFiles/3.16.3/CompilerIdCXX -ferror-limit 19 -fmessage-length 0 -fgnuc-version=4.2.1 -fobjc-runtime=gcc -fcxx-exceptions -fexceptions -fdiagnostics-show-option -faddrsig -o /tmp/CMakeCXXCompilerId-cdd805.o -x c++ CMakeCXXCompilerId.cpp
+clang -cc1 version 10.0.0 based upon LLVM 10.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/9/../../../../include/x86_64-pc-linux-gnu/c++/9"
+ignoring nonexistent directory "/rootfs/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/9/../../../../include/x86_64-linux-gnu/c++/9
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/backward
+ /rootfs/usr/local/include
+ /usr/lib/llvm-10/lib/clang/10.0.0/include
+ /rootfs/usr/include
+End of search list.
+ "/usr/bin/ld" --sysroot=/rootfs -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o a.out crt1.o crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/9/crtbegin.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/9 -L/rootfs/lib -L/rootfs/usr/lib /tmp/CMakeCXXCompilerId-cdd805.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/9/crtend.o crtn.o
+/usr/bin/ld: cannot find crt1.o: No such file or directory
+/usr/bin/ld: cannot find crti.o: No such file or directory
+/usr/bin/ld: cannot find -lm
+/usr/bin/ld: cannot find libgcc_s.so.1
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Detecting C OpenMP failed with the following output:
+Change Dir: /workspace/nova_dataflow/cmake-build-release-nsd-remote/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_6e354/fast && /usr/bin/make -f CMakeFiles/cmTC_6e354.dir/build.make CMakeFiles/cmTC_6e354.dir/build
+make[1]: Entering directory '/workspace/nova_dataflow/cmake-build-release-nsd-remote/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6e354.dir/OpenMPTryFlag.c.o
+/usr/bin/clang --target=aarch64-linux-gnu --sysroot=/rootfs   -v --sysroot=/rootfs -fopenmp=libomp -v   -std=gnu99 -o CMakeFiles/cmTC_6e354.dir/OpenMPTryFlag.c.o   -c /workspace/nova_dataflow/cmake-build-release-nsd-remote/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+clang version 10.0.0-4ubuntu1 
+Target: aarch64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/7
+Found candidate GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/7.5.0
+Found candidate GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/8
+Found candidate GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/9
+Found candidate GCC installation: /rootfs/usr/lib/gcc/aarch64-linux-gnu/7
+Found candidate GCC installation: /rootfs/usr/lib/gcc/aarch64-linux-gnu/7.5.0
+Found candidate GCC installation: /rootfs/usr/lib/gcc/aarch64-linux-gnu/8
+Found candidate GCC installation: /rootfs/usr/lib/gcc/aarch64-linux-gnu/9
+Found candidate GCC installation: /usr/bin/../lib/gcc-cross/aarch64-linux-gnu/9
+Selected GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/9
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-10/bin/clang" -cc1 -triple aarch64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.c -mrelocation-model static -mthread-model posix -mframe-pointer=non-leaf -fmath-errno -fno-rounding-math -masm-verbose -mconstructor-aliases -target-cpu generic -target-feature +neon -target-abi aapcs -fallow-half-arguments-and-returns -dwarf-column-info -fno-split-dwarf-inlining -debugger-tuning=gdb -v -v -resource-dir /usr/lib/llvm-10/lib/clang/10.0.0 -isysroot /rootfs -internal-isystem /rootfs/usr/local/include -internal-isystem /usr/lib/llvm-10/lib/clang/10.0.0/include -internal-externc-isystem /rootfs/usr/include/aarch64-linux-gnu -internal-externc-isystem /rootfs/include -internal-externc-isystem /rootfs/usr/include -std=gnu99 -fdebug-compilation-dir /workspace/nova_dataflow/cmake-build-release-nsd-remote/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -fopenmp -fno-signed-char -fgnuc-version=4.2.1 -fobjc-runtime=gcc -fdiagnostics-show-option -faddrsig -o CMakeFiles/cmTC_6e354.dir/OpenMPTryFlag.c.o -x c /workspace/nova_dataflow/cmake-build-release-nsd-remote/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+clang -cc1 version 10.0.0 based upon LLVM 10.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/rootfs/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /rootfs/usr/local/include
+ /usr/lib/llvm-10/lib/clang/10.0.0/include
+ /rootfs/usr/include/aarch64-linux-gnu
+ /rootfs/usr/include
+End of search list.
+Linking C executable cmTC_6e354
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6e354.dir/link.txt --verbose=1
+/usr/bin/clang --target=aarch64-linux-gnu --sysroot=/rootfs -v --sysroot=/rootfs -fopenmp=libomp -v  -v --sysroot=/rootfs -v  CMakeFiles/cmTC_6e354.dir/OpenMPTryFlag.c.o  -o cmTC_6e354  -v 
+clang version 10.0.0-4ubuntu1 
+Target: aarch64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/7
+Found candidate GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/7.5.0
+Found candidate GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/8
+Found candidate GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/9
+Found candidate GCC installation: /rootfs/usr/lib/gcc/aarch64-linux-gnu/7
+Found candidate GCC installation: /rootfs/usr/lib/gcc/aarch64-linux-gnu/7.5.0
+Found candidate GCC installation: /rootfs/usr/lib/gcc/aarch64-linux-gnu/8
+Found candidate GCC installation: /rootfs/usr/lib/gcc/aarch64-linux-gnu/9
+Found candidate GCC installation: /usr/bin/../lib/gcc-cross/aarch64-linux-gnu/9
+Selected GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/9
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ "/usr/bin/aarch64-linux-gnu-ld" --sysroot=/rootfs -EL -z relro --hash-style=gnu --build-id --eh-frame-hdr -m aarch64linux -dynamic-linker /lib/ld-linux-aarch64.so.1 -o cmTC_6e354 /rootfs/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crt1.o /rootfs/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o /rootfs/lib/gcc/aarch64-linux-gnu/9/crtbegin.o -L/rootfs/lib/gcc/aarch64-linux-gnu/9 -L/rootfs/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu -L/rootfs/lib/aarch64-linux-gnu -L/rootfs/usr/lib/aarch64-linux-gnu -L/rootfs/lib/gcc/aarch64-linux-gnu/9/../../.. -L/rootfs/lib -L/rootfs/usr/lib CMakeFiles/cmTC_6e354.dir/OpenMPTryFlag.c.o -lomp -lgcc --as-needed -lgcc_s --no-as-needed -lpthread -lc -lgcc --as-needed -lgcc_s --no-as-needed /rootfs/lib/gcc/aarch64-linux-gnu/9/crtend.o /rootfs/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crtn.o
+/usr/bin/aarch64-linux-gnu-ld: cannot find -lomp
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_6e354.dir/build.make:87: cmTC_6e354] Error 1
+make[1]: Leaving directory '/workspace/nova_dataflow/cmake-build-release-nsd-remote/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_6e354/fast] Error 2
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /workspace/nova_dataflow/cmake-build-release-nsd-remote/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_759c8/fast && /usr/bin/make -f CMakeFiles/cmTC_759c8.dir/build.make CMakeFiles/cmTC_759c8.dir/build
+make[1]: Entering directory '/workspace/nova_dataflow/cmake-build-release-nsd-remote/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_759c8.dir/OpenMPTryFlag.cpp.o
+/usr/bin/clang++ --target=aarch64-linux-gnu --sysroot=/rootfs    -v --sysroot=/rootfs -fopenmp=libomp -v   -std=gnu++2a -o CMakeFiles/cmTC_759c8.dir/OpenMPTryFlag.cpp.o -c /workspace/nova_dataflow/cmake-build-release-nsd-remote/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+clang version 10.0.0-4ubuntu1 
+Target: aarch64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/7
+Found candidate GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/7.5.0
+Found candidate GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/8
+Found candidate GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/9
+Found candidate GCC installation: /rootfs/usr/lib/gcc/aarch64-linux-gnu/7
+Found candidate GCC installation: /rootfs/usr/lib/gcc/aarch64-linux-gnu/7.5.0
+Found candidate GCC installation: /rootfs/usr/lib/gcc/aarch64-linux-gnu/8
+Found candidate GCC installation: /rootfs/usr/lib/gcc/aarch64-linux-gnu/9
+Found candidate GCC installation: /usr/bin/../lib/gcc-cross/aarch64-linux-gnu/9
+Selected GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/9
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-10/bin/clang" -cc1 -triple aarch64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -mthread-model posix -mframe-pointer=non-leaf -fmath-errno -fno-rounding-math -masm-verbose -mconstructor-aliases -target-cpu generic -target-feature +neon -target-abi aapcs -fallow-half-arguments-and-returns -dwarf-column-info -fno-split-dwarf-inlining -debugger-tuning=gdb -v -v -resource-dir /usr/lib/llvm-10/lib/clang/10.0.0 -isysroot /rootfs -internal-isystem /rootfs/lib/gcc/aarch64-linux-gnu/9/../../../../include/c++/9 -internal-isystem /rootfs/lib/gcc/aarch64-linux-gnu/9/../../../../include/aarch64-linux-gnu/c++/9 -internal-isystem /rootfs/lib/gcc/aarch64-linux-gnu/9/../../../../include/aarch64-linux-gnu/c++/9 -internal-isystem /rootfs/lib/gcc/aarch64-linux-gnu/9/../../../../include/c++/9/backward -internal-isystem /rootfs/usr/local/include -internal-isystem /usr/lib/llvm-10/lib/clang/10.0.0/include -internal-externc-isystem /rootfs/usr/include/aarch64-linux-gnu -internal-externc-isystem /rootfs/include -internal-externc-isystem /rootfs/usr/include -std=gnu++2a -fdeprecated-macro -fdebug-compilation-dir /workspace/nova_dataflow/cmake-build-release-nsd-remote/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -fopenmp -fno-signed-char -fgnuc-version=4.2.1 -fobjc-runtime=gcc -fcxx-exceptions -fexceptions -fdiagnostics-show-option -faddrsig -o CMakeFiles/cmTC_759c8.dir/OpenMPTryFlag.cpp.o -x c++ /workspace/nova_dataflow/cmake-build-release-nsd-remote/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+clang -cc1 version 10.0.0 based upon LLVM 10.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/rootfs/include"
+ignoring duplicate directory "/rootfs/lib/gcc/aarch64-linux-gnu/9/../../../../include/aarch64-linux-gnu/c++/9"
+#include "..." search starts here:
+#include <...> search starts here:
+ /rootfs/lib/gcc/aarch64-linux-gnu/9/../../../../include/c++/9
+ /rootfs/lib/gcc/aarch64-linux-gnu/9/../../../../include/aarch64-linux-gnu/c++/9
+ /rootfs/lib/gcc/aarch64-linux-gnu/9/../../../../include/c++/9/backward
+ /rootfs/usr/local/include
+ /usr/lib/llvm-10/lib/clang/10.0.0/include
+ /rootfs/usr/include/aarch64-linux-gnu
+ /rootfs/usr/include
+End of search list.
+Linking CXX executable cmTC_759c8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_759c8.dir/link.txt --verbose=1
+/usr/bin/clang++ --target=aarch64-linux-gnu --sysroot=/rootfs  -v --sysroot=/rootfs -fopenmp=libomp -v  -v --sysroot=/rootfs -v  CMakeFiles/cmTC_759c8.dir/OpenMPTryFlag.cpp.o  -o cmTC_759c8  -v 
+clang version 10.0.0-4ubuntu1 
+Target: aarch64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/7
+Found candidate GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/7.5.0
+Found candidate GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/8
+Found candidate GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/9
+Found candidate GCC installation: /rootfs/usr/lib/gcc/aarch64-linux-gnu/7
+Found candidate GCC installation: /rootfs/usr/lib/gcc/aarch64-linux-gnu/7.5.0
+Found candidate GCC installation: /rootfs/usr/lib/gcc/aarch64-linux-gnu/8
+Found candidate GCC installation: /rootfs/usr/lib/gcc/aarch64-linux-gnu/9
+Found candidate GCC installation: /usr/bin/../lib/gcc-cross/aarch64-linux-gnu/9
+Selected GCC installation: /rootfs/lib/gcc/aarch64-linux-gnu/9
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ "/usr/bin/aarch64-linux-gnu-ld" --sysroot=/rootfs -EL -z relro --hash-style=gnu --build-id --eh-frame-hdr -m aarch64linux -dynamic-linker /lib/ld-linux-aarch64.so.1 -o cmTC_759c8 /rootfs/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crt1.o /rootfs/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o /rootfs/lib/gcc/aarch64-linux-gnu/9/crtbegin.o -L/rootfs/lib/gcc/aarch64-linux-gnu/9 -L/rootfs/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu -L/rootfs/lib/aarch64-linux-gnu -L/rootfs/usr/lib/aarch64-linux-gnu -L/rootfs/lib/gcc/aarch64-linux-gnu/9/../../.. -L/rootfs/lib -L/rootfs/usr/lib CMakeFiles/cmTC_759c8.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /rootfs/lib/gcc/aarch64-linux-gnu/9/crtend.o /rootfs/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crtn.o
+/usr/bin/aarch64-linux-gnu-ld: cannot find -lomp
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_759c8.dir/build.make:87: cmTC_759c8] Error 1
+make[1]: Leaving directory '/workspace/nova_dataflow/cmake-build-release-nsd-remote/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_759c8/fast] Error 2
+
+
+
